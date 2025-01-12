@@ -1,0 +1,42 @@
+﻿l_english:
+
+ # ###################################
+ # Technologies
+ # ###################################
+
+ tech_administration_1: "Administration Offices"
+ tech_administration_1_desc: "Centralized hubs for managing essential administrative tasks, ensuring streamlined operations and policy implementation."
+ tech_administration_2: "Regional Offices"
+ tech_administration_2_desc: "Localized centers designed to coordinate area-specific operations and provide direct support to surrounding districts."
+ tech_administration_3: "Headquarters"
+ tech_administration_3_desc: "The core command center, responsible for high-level planning, decision-making, and the coordination of all subordinate offices."
+
+ # ###################################
+ # Buildings
+ # ###################################
+
+ building_administration_1: "Administration Office"
+ building_administration_1_desc: "Logisiticians work to maintain organizational efficiency by processing paperwork and managing essential records"
+ building_administration_2: "Regional Office"
+ building_administration_2_desc: "Logisiticians work to streamline local operations, ensuring policies are followed and providing support to nearby facilities."
+ building_administration_3: "Headquarters"
+ building_administration_3_desc: "Logisiticians work to develop strategic plans and oversee the efficient operation of all subordinate offices."
+
+ # ###################################
+ # Jobs
+ # ###################################
+ 
+ job_logistician: "Logistician"
+ job_logistician_plural: "Logisticians"
+ job_logistician_desc: "Managing the complexities of interstellar expansion involves handling vast amounts of paperwork, ensuring proper documentation, and coordinating territorial agreements across the galaxy."
+ job_logistician_effect_desc: "£job_logistician£ $job_logistician_plural$ use £consumer_goods£ §Y$consumer_goods$§! to reduce £empire_sprawl£ §Y$empire_size$§!"
+ mod_job_logistician_add: "$job_logistician$ Jobs"
+ mod_job_logistician_per_pop: "§G+1§! $job_logistician$ Job per $VALUE$ Pops"
+ mod_job_logistician_per_pop_short: "\n§G+1§! £mod_job_logistician_add£ per $VALUE$ £pop£"
+
+ # ###################################
+ # Terms
+ # ###################################
+ empire_sprawl_term: "Empire Size"
+ empire_sprawl_term_desc: "This term dictates how much of the subject's empire size is transfered to the overlord."
+ empire_sprawl_term_value: "$MODIFIER$"

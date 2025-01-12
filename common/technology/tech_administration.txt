@@ -1,0 +1,31 @@
+tech_administration_1 = {
+	area = society
+	cost = @tier3cost2
+	tier = 3
+	is_rare = yes
+	category = { statecraft }
+	weight = @tier3weight1
+}
+
+tech_administration_2 = {
+	area = society
+	cost = @tier4cost3
+	tier = 4
+	category = { statecraft }
+	weight = @tier4weight1
+
+	prerequisites = {
+		"tech_administration_1"
+	}
+}
+
+tech_administration_3 = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { statecraft }
+	weight = @tier5weight1
+	prerequisites = {
+		"tech_administration_2"
+	}
+}

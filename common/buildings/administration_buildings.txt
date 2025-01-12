@@ -1,0 +1,126 @@
+building_administration_1 = {
+	base_buildtime = @b2_time
+	can_build = yes
+	can_demolish = yes
+	can_be_disabled = yes
+	category = government
+
+	prerequisites = {
+		"tech_administration_1"
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	upgrades = {
+		"building_administration_2"
+	}
+
+	planet_modifier = {
+		job_logistician_add = @b1_jobs
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+			rare_crystals = 50
+		}
+
+		upkeep = {
+			energy = 10
+			rare_crystals = 1
+		}
+	}
+
+	triggered_desc = {
+		text = job_logistician_effect_desc
+	}
+}
+
+building_administration_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	can_demolish = yes
+	can_be_disabled = yes
+	category = government
+
+	prerequisites = {
+		"tech_administration_2"
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	upgrades = {
+		"building_administration_3"
+	}
+
+	planet_modifier = {
+		job_logistician_add = @b2_jobs
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+			rare_crystals = 100
+		}
+
+		upkeep = {
+			energy = 10
+			rare_crystals = 2
+		}
+	}
+	
+	triggered_desc = {
+		text = job_logistician_effect_desc
+	}
+}
+
+building_administration_3 = {
+	base_buildtime = @b3_time
+	can_build = no
+	can_demolish = yes
+	can_be_disabled = yes
+	category = government
+
+	prerequisites = {
+		"tech_administration_3"
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	planet_modifier = {
+		job_logistician_add = @b3_jobs
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+			rare_crystals = 200
+		}
+
+		upkeep = {
+			energy = 10
+			rare_crystals = 3
+		}
+	}
+
+	triggered_desc = {
+		text = job_logistician_effect_desc
+	}
+}

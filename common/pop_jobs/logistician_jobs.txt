@@ -1,0 +1,42 @@
+logistician = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_research_lab_1
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
+
+	country_modifier = {
+		empire_size_add = -5
+	}
+
+	resources = {
+		category = planet_administrators
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_modifier|JOB|logistician|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+	}
+}
